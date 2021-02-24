@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+/*　すべてのページに適用　*/
+html {
+  font-family:sans-serif;
+}
+
+ body {
+   background-color: #eeece9;
+ }
+
+ .wrapper {
+   margin: 0 auto 0 auto;
+   max-width: 960px;
+ }
+
+ h2 {
+   color: #3f5170;
+   font-size: 30px;
+   border-bottom: 3px dotted #3f5170;
+   margin: 50px 0px 15px 0;
+   padding: 5px;
+ }
+
+p {
+  line-height: 1.5;
+}
+a:link {
+  color: #d25833;
+}
+a:visited {
+  color: #d25833;
+}
+a:hover {
+  color: #e3937a;
+}
+a:active {
+  color: #ff6a3b;
+}
+
+
+
+/* すべてのページに適用　ヘッダー　*/
+
+.logo {
+  margin: 30px 0 40px 0;
+  line-height: 0;
+  text-align: center;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav ul {
+  margin: 0 0 0 0;
+  padding: 20px 10px 15px 20px;
+  background-image: url(../images/line1.png);
+  background-repeat: repeat-x;
+}
+.nav li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 30px;
+  margin: 30Px 10px;
+
+}
+
+.nav1 li {
+  list-style-type: none;
+  padding-right: 30px;
+}
+
+/* すべてのフッターへ適用　*/
+.footer {
+    background-image: url(../images/footer-bg.png);
+    background-repeat: no-repeat;
+    padding: 80px 15px 20px 15px;
+    margin-top: 50px;
+    font-size: 12px;
+    color: black;
+}
+
+
+/*　個別のスタイル　*/
+/*　index.html  */
+
+.keyvisual img {
+  width: 960px;
+  height: auto;
+  position: relative;
+  max-width: 100%;
+
+}
+
+.keyvisual h1 {
+  margin:15px 0 0 0;
+  opacity: 0.8;
+  color: #f48000;
+  font-style: oblique;
+  font-size: 100px;
+  position: absolute;
+  top: 800px;
+  left: 500px;
+  width:100%;
+
+}
+
+.news-item {
+  margin: 0;
+}
+
+/*  prof.html  */
+.hacchi-photo {
+  float: left;
+  padding: 0 1em 1em 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.prof-pic img{
+  width: 300px;
+  height: auto;
+}
+
+/* テーブル　*/
+.info {
+  border-collapse: collapse;
+}
+
+.info th, .info td {
+  padding: 8px;
+  border: 1px solid #bec2c7;
+  text-align: left;
+}
+
+.info th {
+  background-color: #dde2ea;
+  width: 150px;
+  color: #3f5170;
+  vertical-align: top;
+}
+
+/* home */
+.kuma {
+  display: flex;
+  border-bottom: 1px dashed #bec2c7;
+  padding: 8px 8px;
+}
+
+.hometown-text {
+  margin: 0 16px 0 20px;
+}
+
+.town img {
+  width: 300px;
+  height: auto;
+}
+
+.shiba img {
+  width: 300px;
+  height: auto;
+}
+
+.japan img {
+  width: 100%;
+  height: auto;
+
+}
+
+/* album */
+.col img {
+  width: 33%;
+  height: auto;
+  float: left;
+  margin: 1px;
+}
+
+/* footer */
+.clear {
+  clear: both;
+}
+
+/* owner */
+.nav1 h3 {
+  text-align: center;
+  font-size: 24px
+
+}
+
+.nav1 p {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* スマートフォン向けCSS　*/
+@media (max-width: 767px) {
+  /* 全体　ナビゲーション　*/
+  .wrapper {
+    margin: 0 8px;
+  }
+  .logo {
+    margin: 30px 0;
+  }
+  .logo img {
+    width: 200px;
+  }
+  .nav {
+    background-color: #dfddda;
+  }
+  .nav li {
+    display: block;
+  }
+
+  .keyvisual h1 {
+    display: none;
+  }
+  /* home prof横並び解除　*/
+  .kuma {
+    display: block;
+  }
+  .town {
+    margin-right: 0;
+    width: 100%;
+  }
+  .hometown-text {
+    width: 100%;
+  }
+
+/* about 画像のパディングを調整　*/
+  .hacchi-photo {
+    padding-right: 0;
+  }
+
+  .col img{
+    height: auto;
+    margin: 1px;
+    display: flex;
+    width:95%;
+    max-width:640px;
+
+  }
+
+}
